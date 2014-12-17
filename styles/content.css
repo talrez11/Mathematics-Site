@@ -1,0 +1,322 @@
+/**
+ * Main Style Sheet
+ * Mathematics
+ *
+ * Copyright (c) 2014. by Way2CU, http://way2cu.com
+ * Authors: Talreznic
+ */
+
+header {
+	min-height: 670px;
+	background-image: url(../images/header-background.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+header div.inner_wrap {
+	display: block;
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+header div.inner_wrap div.header_content{
+    background-image: url(../images/stamp.svg);
+	background-repeat: no-repeat;
+	background-position: bottom left;
+	background-size: auto 310px;
+}
+
+div.inner_wrap div.header_content a.phone {
+	display: block;
+	
+	position: absolute;
+	top:5px;
+	left: 0px;
+
+	background : 
+	url(../images/icon-phone-white.svg),
+	linear-gradient(0deg, rgba(230, 126, 34, 1) 0%, rgba(243, 156, 18, 1) 99.51%);
+
+	background-repeat: no-repeat;
+	background-position: 220px center, center top;
+	background-size: 30px 30px, auto 100%;
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 55px;
+	padding-left: 25px;
+
+	font-size: 2.2rem;
+	font-weight: bold;
+	color: white;
+	box-shadow : 0px 0px 3px rgba(0, 0, 0, 0.5);
+	text-decoration: none;
+	transition: all 0.3s;
+}
+
+div.inner_wrap div.header_content a.phone:hover {
+	background : 
+	url(../images/icon-phone-white.svg),
+	linear-gradient(0deg, rgba(243, 156, 18, 1) 0%, rgba(230, 126, 34, 1)  99.51%);
+	background-repeat: no-repeat;
+	background-position: 220px center, center top;
+	background-size: 30px 30px, auto 100%;
+
+}
+
+header div.inner_wrap div.header_content > span {
+	display: block;
+	padding-top: 20px;
+	font-size: 2.8rem;
+	font-weight: bold;
+}
+
+header div.inner_wrap div.header_content h1 {
+	display: block;
+	width: 885px;
+	margin-top: 5px;
+	font-size: 6rem;
+	font-weight: bold;
+}
+
+div.inner_wrap div.header_content > div.call_to_action {
+	display: inline-block;
+	vertical-align: top;
+	width: 400px;
+
+	padding-top: 10px;
+	padding-bottom: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
+
+	position: relative;
+
+	border-radius : 10px;
+	background : linear-gradient(0deg, rgba(230, 126, 34, 1) 0%, rgba(243, 156, 18, 1) 99.51%);
+
+	text-align: center;
+	box-shadow : 0px 0px 3px rgba(0, 0, 0, 0.5);
+    transition:background 0.8s;
+}
+
+div.inner_wrap div.header_content > div.call_to_action:hover{
+	background: linear-gradient(0deg, rgba(243, 156, 18, 1) 0%, rgba(230, 126, 34, 1) 99.51%);
+}
+
+header div.inner_wrap div.header_content div span {
+	display: block;
+	padding-bottom: 15px;	
+	font-size: 1.9rem;
+	color:white;
+}
+
+header div.inner_wrap div.header_content div.call_to_action a {
+	display:block;
+
+	padding-right: 55px;
+
+	background-image: url(../images/icon-phone-white.svg);
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 60px 60px;
+
+	color: white;
+	font-size: 3.1rem;
+	font-weight: bold;
+	text-decoration: none;
+	transition:all 0.3s;
+}
+
+/*HEADER FORM*/
+header div.form_wrap{
+	display: block;
+	margin-top: 25px;
+	padding-bottom: 25px;
+	background-color:rgba(44, 62, 80, 0.6);
+	border-top: 1px solid white;
+}
+
+header div.form_wrap div.inner_wrap{
+	display: block;
+    text-align: right;
+}
+header div.form_wrap div.inner_wrap > span {
+	display: block;
+	vertical-align: top;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 1.9rem;
+	color: white;
+}
+
+header div.form_wrap div.inner_wrap form label {
+	display: inline-block;
+	vertical-align: middle;	
+}
+
+header div.form_wrap div.inner_wrap form label span {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 25px;
+	font-size: 1.6rem;
+	color:white;
+}
+header div.form_wrap div.inner_wrap form label input {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 25px;
+	width: 250px;
+	height: 40px;
+	font-size: 1.6rem;
+	border: 2px solid rgba(44, 62, 80, 0.6);
+	transition:all 0.3s; 
+}
+header div.form_wrap div.inner_wrap form label input:focus {
+	border: 2px solid rgba(237, 143, 24, 1);
+}
+
+header div.form_wrap div.inner_wrap form div.controls {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 20px;
+}
+
+header div.form_wrap div.inner_wrap form div.controls button {
+	background-color:rgba(237, 143, 24, 1);
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right:10px;
+	color: white; 
+	font-size: 1.6rem;
+	border: 1px solid rgba(237, 143, 24, 1);
+	cursor: pointer;
+}
+
+/*ABOUT US*/
+
+div.wrap_blue {
+	display: block;
+	background-color: #33516f;
+	color:white;
+}
+
+div.wrap_blue div.inner_wrap {
+	text-align: center;
+}
+
+div.wrap_blue div.inner_wrap article {
+	display: block;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+div.wrap_blue div.inner_wrap article h1 {
+	margin: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 2.9rem;
+	font-weight: 300;
+}
+
+div.wrap_blue div.inner_wrap article p {
+	display: block;
+	width: 800px;
+
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0px;
+
+	padding-top: 15px;
+	margin-bottom: 0px;
+	font-size: 1.3rem;
+}
+
+/*FEATURES SECTION*/
+
+div.wrap_white {
+	background-color: white;
+}
+
+div.wrap_white div.inner_wrap {
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+div.wrap_white div.inner_wrap span {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	width: 200px;
+	padding-top: 165px;
+	padding-left: 50px;
+	padding-right: 50px;
+	font-size: 1.6rem;
+	transition:all 0.3s;
+}
+
+div.wrap_white div.inner_wrap span:before {
+	position: absolute;
+	top:0px;
+	left: 50%;
+	margin-left: -75px;
+	content: '';
+	background-image: url(../images/icons.svg);
+	background-repeat: no-repeat;
+	background-size: auto 750px;
+	width: 150px;
+	height: 150px;
+	transition:all 0.9s;
+}
+
+div.wrap_white div.inner_wrap span:nth-of-type(1):before {
+	background-position: 0px -600px;
+}
+div.wrap_white div.inner_wrap span:nth-of-type(1):hover:before {
+	background-position: -200px -600px;
+}
+
+div.wrap_white div.inner_wrap span:nth-of-type(2):before {
+	background-position: 0px -400px;
+
+}
+div.wrap_white div.inner_wrap span:nth-of-type(2):hover:before{
+	background-position: -200px -400px;
+}
+
+div.wrap_white div.inner_wrap span:nth-of-type(3):before {
+	background-position: 0px -200px;
+
+}
+div.wrap_white div.inner_wrap span:nth-of-type(3):hover:before{
+	background-position: -200px -200px;
+}
+
+div.wrap_white div.inner_wrap span:nth-of-type(4):before {
+	background-position: 0px  0px;
+
+}
+div.wrap_white div.inner_wrap span:nth-of-type(4):hover:before{
+	background-position: -200px 0px;
+}
+
+/*Testemonials Section*/
+
+div.testemonial{
+	background-image: url(../images/testimonials-background.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: auto 800px;
+	min-height: 800px;
+}
+
+
+
+
+
+
+
