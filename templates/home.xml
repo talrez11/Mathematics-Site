@@ -9,7 +9,70 @@
 		</head>
 
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
-			<h1>It works!</h1>
+			<!-- HEADER SECTION -->
+			<header>
+				<div class="inner_wrap">
+					<div class="header_content">
+							<a
+								href="'tel:'.urlencode(Language::getText('phone'))"
+								cms:eval="href"
+								class="phone"
+								>
+								<cms:text constant="phone"/>
+							</a>
+		
+							<span><cms:text constant="logo"/></span>
+		
+							<h1><cms:text constant="header_title"/></h1>
+		
+							<div class="call_to_action">
+								<span><cms:text constant="phone_label"/></span>
+		
+								<a
+									href="'tel:'.urlencode(Language::getText('phone'))"
+									cms:eval="href" 
+								>
+									<cms:text constant="phone"/>
+								</a>
+						   </div>
+					</div>
+				</div>
+				<div class="form_wrap">
+					  <div class="inner_wrap">
+								<span><cms:text constant="form_title"/></span>
+								<cms:module 
+								name="contact_form" 
+								action="show" 
+								text_id="contact_form"
+								/>
+					</div>											
+			   </div>
+			</header>
+			<!-- ABOUT US SECTION -->
+			<div class="wrap_blue">
+				 <div class="inner_wrap">
+				 	 <cms:module 
+								name="articles" 
+								action="show" 
+								text_id="about_article"
+								/>
+				 </div>
+			</div>
+			<!-- FEATURES SECTION -->
+			<div class="wrap_white">
+				<div class="inner_wrap">
+					<span><cms:text constant="feature4"/></span>
+					<span><cms:text constant="feature3"/></span>
+					<span><cms:text constant="feature2"/></span>
+					<span><cms:text constant="feature1"/></span>
+				</div>
+			</div>
+			<!-- Testemonial Section -->
+			<div class="testemonial">
+				<div class="inner_wrap">
+					
+				</div>
+			</div>
 		</body>
 	</html>
 </document>
