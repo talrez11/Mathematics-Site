@@ -1,0 +1,275 @@
+/**
+ *  Style Sheet
+ *  Mathematics Site Mobile
+ *
+ * Copyright (c) 2014. by way2cu
+ * Author: Tal Reznic
+ */
+
+ div.inner_wrap {
+	display: block;
+	/*width: 1200px;*/
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+header {
+	background-image: url(../images/mobile-header-background.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: 100% auto;
+	height: 800px;
+}
+
+header div.inner_wrap div.header_content {
+    background-image: url(../images/stamp.svg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: auto 150px;
+	height: 420px;
+}
+
+header div.inner_wrap div.header_content > span {
+	display: block;
+	text-align: center;
+	padding-top: 20px;
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+
+header div.inner_wrap div.header_content h1 {
+	display: block;
+	text-align: center;
+	margin-top: 5px;
+	font-size: 2.2rem;
+	font-weight: bold;
+}
+
+div.call_to_action {
+	display:block;
+    width:200px;
+    margin-right: auto;
+    margin-left: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 40px;
+	padding-right: 40px;
+    position: relative;
+	border-radius : 10px;
+	background : linear-gradient(0deg, rgba(230, 126, 34, 1) 0%, rgba(243, 156, 18, 1) 99.51%);
+	text-align: center;
+	box-shadow : 0px 0px 3px rgba(0, 0, 0, 0.5);
+    transition:background 0.8s;
+}
+
+div.call_to_action:hover{
+	background: linear-gradient(0deg, rgba(243, 156, 18, 1) 0%, rgba(230, 126, 34, 1) 99.51%);
+}
+
+
+header div.inner_wrap div.header_content div span {
+	display: block;
+	padding-bottom: 12px;	
+	font-size: 0.9rem;
+	color:white;
+}
+
+div.call_to_action a {
+	display:block;
+	padding-right: 25px;
+	background-image: url(../images/icon-phone-white.svg);
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 30px 30px;
+	color: white;
+	font-size: 1.6rem;
+	font-weight: bold;
+	text-decoration: none;
+	transition:all 0.3s;
+}
+
+/*HEEADER FORM*/
+header div.form_wrap {
+	display: block;
+
+	margin-top: 25px;
+	padding-bottom: 25px;
+}
+
+header div.form_wrap div.inner_wrap {
+	display: block;
+    text-align: center;
+}
+
+header div.form_wrap div.inner_wrap > span {
+	display: block;
+	vertical-align: top;
+	text-align: center;
+	padding-bottom: 20px;
+	font-size: 1.7rem;
+}
+
+header div.form_wrap div.inner_wrap form label {
+	display: inline-block;
+	vertical-align: middle;
+	padding-top: 15px;
+}
+
+header div.form_wrap div.inner_wrap form label span {
+	display:inline-block;
+	vertical-align: middle;
+	width: 60px;
+	text-align: right;
+	font-size: 1.1rem;
+}
+
+header div.form_wrap div.inner_wrap form label input {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 0px;
+	width: 225px;
+	height: 40px;
+	font-size: 1.6rem;
+	border: 2px solid rgba(44, 62, 80, 0.6);
+	transition: all 0.3s
+}
+header div.form_wrap div.inner_wrap form label input:focus {
+	border: 2px solid rgba(237, 143, 24, 1);
+}
+header div.form_wrap div.inner_wrap form div.controls {
+	display: block;
+	padding-top: 20px;
+}
+
+header div.form_wrap div.inner_wrap form div.controls button {
+	background-color:rgba(237, 143, 24, 1);
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 40px;
+	padding-right:40px;
+	color: white; 
+	font-size: 1.6rem;
+	box-shadow : 0px 0px 3px rgba(0, 0, 0, 0.5);
+	border: 1px solid rgba(237, 143, 24, 1);
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/*ABOUT US*/
+
+div.wrap_blue {
+	display: block;
+	background-color: #33516f;
+	color:white;
+}
+
+div.wrap_blue div.inner_wrap {
+	text-align: center;
+}
+div.wrap_blue div.inner_wrap article {
+	display: block;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+div.wrap_blue div.inner_wrap article h1 {
+	margin: 0px;
+	padding-bottom: 10px;
+	font-size: 2rem;
+	font-weight: 300;
+}
+div.wrap_blue div.inner_wrap article p {
+	display: block;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding-top: 15px;
+	padding-left: 25px;
+	padding-right: 25px;
+	font-size: 0.9rem;
+}
+/*FEATURES SECTION*/
+
+div.wrap_white {
+	background-color: white;
+}
+div.wrap_white div.inner_wrap {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+div.wrap_white div.inner_wrap span {
+	position: relative;
+	display: block;
+	width: 200px;
+	margin-top: 25px;
+	padding-top: 180px;
+	padding-left: 50px;
+	padding-right: 50px;
+	font-size: 1.6rem;
+	transition:all 0.3s;
+}
+
+div.wrap_white div.inner_wrap span:before {
+	position: absolute;
+	top:10px;
+	left: 50%;
+	margin-left: -75px;
+	content: '';
+	background-image: url(../images/icons.svg);
+	background-repeat: no-repeat;
+	background-size: auto 750px;
+	width: 150px;
+	height: 150px;
+	transition:all 0.4s;
+}
+
+div.wrap_white div.inner_wrap span:nth-of-type(1):before {
+	background-position: -200px -600px;
+}
+div.wrap_white div.inner_wrap span:nth-of-type(2):before {
+	background-position: -200px -400px;
+}
+
+div.wrap_white div.inner_wrap span:nth-of-type(3):before {
+	background-position: -200px -200px;
+}
+
+div.wrap_white div.inner_wrap span:nth-of-type(4):before {
+	background-position: -200px 0px;
+}
+
+/*Testimonials Section*/
+
+div.wrap_testimonial {
+	background-image: url(../images/mobile-testimonials-background.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: auto 640px;
+	min-height: 640px;
+	width: 100%;
+}
+div.wrap_testimonial div.inner_wrap > span {
+	display: block;
+	text-align: center;
+}
+div.wrap_testimonial div.inner_wrap > span:nth-of-type(1) {
+	padding-top: 70px;
+	font-size: 2.1rem;
+}
+div.wrap_testimonial div.inner_wrap > span:nth-of-type(2) {
+	position: relative;
+	padding-top: 10px;
+	font-size: 1.4rem;	
+}
+div.wrap_testimonial div.inner_wrap > span:nth-of-type(2):after {
+	content: '';
+	position: absolute;
+	bottom:-5px;
+	left: 50%;
+	margin-left: -100px;
+	background-color:#bcc2c6;
+	height: 2px;
+	width: 200px;
+}
+
+
+

@@ -6,14 +6,7 @@
  * Authors: Talreznic
  */
 
-header {
-	min-height: 670px;
-	background-image: url(../images/header-background.jpg);
-	background-repeat: no-repeat;
-	background-position: center center;
-}
-
-header div.inner_wrap {
+div.inner_wrap {
 	display: block;
 	width: 1200px;
 	margin-left: auto;
@@ -21,7 +14,14 @@ header div.inner_wrap {
 	position: relative;
 }
 
-header div.inner_wrap div.header_content{
+header {
+	min-height: 670px;
+	background-image: url(../images/header-background.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+header div.inner_wrap div.header_content {
     background-image: url(../images/stamp.svg);
 	background-repeat: no-repeat;
 	background-position: bottom left;
@@ -81,7 +81,7 @@ header div.inner_wrap div.header_content h1 {
 	font-weight: bold;
 }
 
-div.inner_wrap div.header_content > div.call_to_action {
+div.call_to_action {
 	display: inline-block;
 	vertical-align: top;
 	width: 400px;
@@ -101,7 +101,7 @@ div.inner_wrap div.header_content > div.call_to_action {
     transition:background 0.8s;
 }
 
-div.inner_wrap div.header_content > div.call_to_action:hover{
+div.call_to_action:hover{
 	background: linear-gradient(0deg, rgba(243, 156, 18, 1) 0%, rgba(230, 126, 34, 1) 99.51%);
 }
 
@@ -112,7 +112,7 @@ header div.inner_wrap div.header_content div span {
 	color:white;
 }
 
-header div.inner_wrap div.header_content div.call_to_action a {
+div.call_to_action a {
 	display:block;
 
 	padding-right: 55px;
@@ -130,7 +130,7 @@ header div.inner_wrap div.header_content div.call_to_action a {
 }
 
 /*HEADER FORM*/
-header div.form_wrap{
+header div.form_wrap {
 	display: block;
 	margin-top: 25px;
 	padding-bottom: 25px;
@@ -138,7 +138,7 @@ header div.form_wrap{
 	border-top: 1px solid white;
 }
 
-header div.form_wrap div.inner_wrap{
+header div.form_wrap div.inner_wrap {
 	display: block;
     text-align: right;
 }
@@ -270,7 +270,7 @@ div.wrap_white div.inner_wrap span:before {
 	background-size: auto 750px;
 	width: 150px;
 	height: 150px;
-	transition:all 0.9s;
+	transition:all 0.4s;
 }
 
 div.wrap_white div.inner_wrap span:nth-of-type(1):before {
@@ -284,7 +284,7 @@ div.wrap_white div.inner_wrap span:nth-of-type(2):before {
 	background-position: 0px -400px;
 
 }
-div.wrap_white div.inner_wrap span:nth-of-type(2):hover:before{
+div.wrap_white div.inner_wrap span:nth-of-type(2):hover:before {
 	background-position: -200px -400px;
 }
 
@@ -306,15 +306,248 @@ div.wrap_white div.inner_wrap span:nth-of-type(4):hover:before{
 
 /*Testemonials Section*/
 
-div.testemonial{
+div.wrap_testimonial {
 	background-image: url(../images/testimonials-background.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: auto 800px;
 	min-height: 800px;
 }
+div.wrap_testimonial div.inner_wrap > span {
+	display: block;
+	text-align: center;
+	width: 750px;
+}
+
+div.wrap_testimonial div.inner_wrap > span:nth-of-type(1) {
+	padding-top: 70px;
+	font-size: 3.1rem;
+}
+div.wrap_testimonial div.inner_wrap > span:nth-of-type(2) {
+	position: relative;
+	padding-top: 20px;
+	font-size: 2.3rem;	
+}
+div.wrap_testimonial div.inner_wrap > span:nth-of-type(2):after {
+	content: '';
+	position: absolute;
+	bottom:-15px;
+	left: 50%;
+	margin-left: -300px;
+	background-color:#bcc2c6;
+	height: 2px;
+	width: 600px;
+}
+
+div.wrap_testimonial div.inner_wrap div.testimonials_container {
+	display: block;
+	width: 670px;
+	margin-top: 25px;
+	padding-left: 40px;
+	padding-right: 40px;
+	text-align: center;
+	position: relative;
+}
+
+div.wrap_testimonial div.inner_wrap div.testimonials_container p:nth-of-type(1) {
+	font-size: 1.3rem;
+}
+div.wrap_testimonial div.inner_wrap div.testimonials_container p:nth-of-type(2) {
+	display: block;
+	width: 190px;
+	margin-top: 0px;
+	font-size: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*testemonials Rounded Tabs*/
+div.wrap_testimonial div.inner_wrap div.testimonials_container nav.controls {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 245px;
+}
+
+div.wrap_testimonial div.inner_wrap div.testimonials_container nav.controls a {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-left: 6px;
+	margin-right: 6px;
+	border: 2px solid white;
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: 0px 0px 0px 1px #33485d;
+	transition: 0.3s all;
+}
+
+div.wrap_testimonial div.inner_wrap div.testimonials_container nav.controls a.active {
+	background-color: black;
+	border-color: white;
+}
+
+div.wrap_testimonial div.inner_wrap div.testimonials_container .testimonial {
+	position: absolute;
+	width: 670px;
+	top: 0px;
+	opacity: 0;
+	transition: all 0.3s;
+}
+
+div.wrap_testimonial div.inner_wrap div.testimonials_container .testimonial.visible {
+	opacity: 1;
+}
 
 
+div.wrap_testimonial div.inner_wrap div.testimonials_container nav.controls a:nth-of-type(1) {
+	margin-right: 0px;
+}
+
+/*Testemonials arrows*/
+div.wrap_testimonial div.inner_wrap div.testimonials_container > a:nth-of-type(1) {
+     position: absolute;
+     top: 30px;
+     left: -30px;
+     background-image: url(../images/arrow-left.svg);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: 60px;
+     width: 60px;
+     height: 60px;
+     cursor: pointer;
+}
+div.wrap_testimonial div.inner_wrap div.testimonials_container > a:nth-of-type(2) {
+     position: absolute;
+     top: 30px;
+     right: -30px;
+     background-image: url(../images/arrow-right.svg);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: 60px;
+     width: 60px;
+     height: 60px;
+     cursor: pointer;
+}
+
+/*FOOTER SECTION*/
+
+footer {
+	background-image: url(../images/footer-background.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 700px;
+}
+
+footer div.inner_wrap > div {
+    display: inline-block;
+    vertical-align: top; 
+}
+
+footer div.inner_wrap > div:nth-of-type(1) {
+	text-align: right;
+	width: 500px;
+}
+
+footer div.inner_wrap > div:nth-of-type(1) > span:nth-of-type(1) {
+    display: block;
+	padding-top: 20px;
+	font-size: 2.8rem;
+	font-weight: bold;
+} 
+
+footer div.inner_wrap > div:nth-of-type(1) > span:nth-of-type(2) {
+	display: block;
+	padding-top: 20px;
+	padding-bottom: 40px;
+	font-size: 3.4rem;
+	font-weight: bold;
+}
+
+footer div.inner_wrap > div:nth-of-type(1) > div.call_to_action {
+	margin-right: 80px;
+}
+
+footer div.inner_wrap > div:nth-of-type(1) > div.call_to_action span{
+	display: block;
+	color: white;
+	font-size: 1.9rem;
+	padding-bottom: 10px;
+}
+
+/*FOOTER FORM*/
+
+footer div.inner_wrap > div:nth-of-type(2) { 
+	width: 500px;
+	text-align: center;
+	margin-right: 195px;
+}
+
+footer div.inner_wrap > div:nth-of-type(2) > span {
+   display: block;
+   background-color: #33516f;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-left: 40px;
+   padding-right: 40px;
+   font-size: 1.9rem;
+   color:white;
+}
+
+footer div.inner_wrap > div:nth-of-type(2) form {
+	background-color:  rgba(255, 255, 255, 0.5);
+	padding-top: 20px;
+}
+
+footer div.inner_wrap > div:nth-of-type(2) form label {
+	display: block;
+	padding-top: 40px;
+}
+
+footer div.inner_wrap > div:nth-of-type(2) form label span {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: right;
+	width: 70px;
+	font-size: 1.5rem;
+}
+
+footer div.inner_wrap > div:nth-of-type(2) form label input {
+	display: inline-block;
+	vertical-align: middle;
+	width: 300px;
+	height: 50px;
+	font-size: 1.5rem;
+	border: 1px solid #33516f;
+	transition:all 0.3s;
+}
+
+footer div.inner_wrap > div:nth-of-type(2) form label input:focus {
+	border: 1px solid rgba(237, 143, 24, 1);
+}
+
+footer div.inner_wrap > div:nth-of-type(2) form div.controls {
+	display: block;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+footer div.inner_wrap > div:nth-of-type(2) form div.controls button {
+	background : linear-gradient(0deg, rgba(230, 126, 34, 1) 0%, rgba(243, 156, 18, 1) 99.51%);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 60px;
+	padding-right: 60px;
+	color: white;
+	font-size: 2rem;
+	border: 1px solid rgba(237, 143, 24, 1);
+	box-shadow : 0px 0px 5px rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+}
+
+footer div.inner_wrap > div:nth-of-type(2) form div.controls button:hover {
+	background : linear-gradient(0deg, rgba(243, 156, 18, 1) 0%, rgba(230, 126, 34, 1) 99.51%);
+}
 
 
 
