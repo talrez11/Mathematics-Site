@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../units/schema/template.dtd">
+<document>
+	<cms:var name="_DOCTYPE"/>
+	<html lang="$language" cms:eval="lang">
+		<head>
+			<title><cms:text constant="site_title"/></title>
+			<cms:collection include="page_control"/>
+			<cms:module name="head_tag" action="print_tag"/>
+		</head>
+
+		<body>
+			<header>
+				<div class="inner_wrap">
+					<div class="header_content">
+						<cms:desktop>
+							<a
+								href="'tel:'.urlencode(Language::getText('phone'))"
+								cms:eval="href"
+								class="phone"
+								>
+								<cms:text constant="phone"/>
+							</a>
+						</cms:desktop>	
+		
+							<span><cms:text constant="logo"/></span>
+		
+							<h1><cms:text constant="header_title"/></h1>
+		
+							<div class="call_to_action">
+								<span><cms:text constant="phone_label"/></span>
+		
+								<a
+									href="'tel:'.urlencode(Language::getText('phone'))"
+									cms:eval="href" 
+								>
+									<cms:text constant="phone"/>
+								</a>
+						   </div>
+					</div>
+				</div>
+				<div class="form_wrap">
+					  <div class="inner_wrap">
+								<span><cms:text constant="form_title"/></span>
+								<cms:module 
+								name="contact_form" 
+								action="show" 
+								text_id="contact_form"
+								/>
+					</div>											
+			   </div>
+			</header>	
+		</body>
+	</html>
+</document>
