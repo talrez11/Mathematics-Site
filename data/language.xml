@@ -9,10 +9,12 @@
 		<constant name="phone_label">התקשרו עכשיו וקבלו הצעת מחיר</constant>
 		<constant name="phone">03-7654321</constant>
 		<constant name="form_title">השאירו פרטים ונציג שלנו יחזור אליכם בהקדם</constant>
-		<constant name="form_title_footer">למידע נוסף מלאו פרטיםונחזור אליכם בהקדם:</constant>
+		<constant name="form_title_footer">למידע נוסף מלאו פרטים ונחזור אליכם בהקדם:</constant>
 		<constant name="feature1">חומרי הלימוד הכימקיפים והכי מדוייקים</constant>
 		<constant name="feature2">שיטת לימוד מדורגת,ממוקדת וחכמה</constant>
 		<constant name="feature3">המורים הכי טובים והכימנוסים</constant>
 		<constant name="feature4">יחס אישי וליווי מקצועי</constant>
+		<constant name="testimonial_title">גם אתם יכולים להיות חלק מההצלחה!</constant>
+		<constant name="testimonial_title2">חוות דעת של בוגרים</constant>
 	</language>
 </document>
