@@ -11,28 +11,55 @@
 		<body>
 			<footer>
 				<div class="inner_wrap">
-					<div>
-						<span><cms:text constant="logo"/></span>
-						<span><cms:text constant="header_title"/></span>
-						<div class="call_to_action">
-								<span><cms:text constant="phone_label"/></span>
-		
-								<a
-									href="'tel:'.urlencode(Language::getText('phone'))"
-									cms:eval="href" 
-								>
-									<cms:text constant="phone"/>
-								</a>
-						  </div>
-					</div>
-					<div>
-						<span><cms:text constant="form_title_footer"/></span>
-								<cms:module 
-								name="contact_form" 
-								action="show" 
-								text_id="contact_form"
-								/>
-					</div>
+					<cms:desktop>
+						<div>
+							<span><cms:text constant="logo"/></span>
+							<span><cms:text constant="header_title"/></span>
+							<div class="call_to_action">
+									<span><cms:text constant="phone_label"/></span>
+			
+									<a
+										href="'tel:'.urlencode(Language::getText('phone'))"
+										cms:eval="href" 
+									>
+										<cms:text constant="phone"/>
+									</a>
+							  </div>
+						</div>
+						<div>
+							<span><cms:text constant="form_title_footer"/></span>
+									<cms:module 
+									name="contact_form" 
+									action="show" 
+									text_id="contact_form"
+									/>
+						</div>
+					</cms:desktop>
+					<cms:mobile>
+						<div>
+							<span><cms:text constant="form_title_footer"/></span>
+									<cms:module 
+									name="contact_form" 
+									action="show" 
+									text_id="contact_form"
+									/>
+						</div>
+						<div>
+							<span><cms:text constant="logo"/></span>
+							<span><cms:text constant="header_title"/></span>
+							<div class="call_to_action">
+									<span><cms:text constant="phone_label"/></span>
+			
+									<a
+										href="'tel:'.urlencode(Language::getText('phone'))"
+										cms:eval="href" 
+									>
+										<cms:text constant="phone"/>
+									</a>
+							  </div>
+						</div>
+						
+					</cms:mobile>
 				</div>
 			</footer>
 		</body>
