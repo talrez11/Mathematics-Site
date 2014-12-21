@@ -18,21 +18,21 @@ header {
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: 100% auto;
-	height: 800px;
+	height: 850px;
 }
 
 header div.inner_wrap div.header_content {
     background-image: url(../images/stamp.svg);
 	background-repeat: no-repeat;
 	background-position: center bottom;
-	background-size: auto 150px;
-	height: 420px;
+	background-size: auto 175px;
+	height: 480px;
 }
 
 header div.inner_wrap div.header_content > span {
 	display: block;
 	text-align: center;
-	padding-top: 20px;
+	padding-top: 30px;
 	font-size: 1.8rem;
 	font-weight: bold;
 }
@@ -40,8 +40,8 @@ header div.inner_wrap div.header_content > span {
 header div.inner_wrap div.header_content h1 {
 	display: block;
 	text-align: center;
-	margin-top: 5px;
-	font-size: 2.2rem;
+	margin-top: 25px;
+	font-size: 1.8rem;
 	font-weight: bold;
 }
 
@@ -106,7 +106,7 @@ header div.form_wrap div.inner_wrap > span {
 	vertical-align: top;
 	text-align: center;
 	padding-bottom: 20px;
-	font-size: 1.7rem;
+	font-size: 1.4rem;
 }
 
 header div.form_wrap div.inner_wrap form label {
@@ -199,7 +199,7 @@ div.wrap_white div.inner_wrap {
 div.wrap_white div.inner_wrap span {
 	position: relative;
 	display: block;
-	width: 200px;
+/*	width: 200px;*/
 	margin-top: 25px;
 	padding-top: 180px;
 	padding-left: 50px;
@@ -242,17 +242,16 @@ div.wrap_white div.inner_wrap span:nth-of-type(4):before {
 div.wrap_testimonial {
 	background-image: url(../images/mobile-testimonials-background.jpg);
 	background-repeat: no-repeat;
-	background-position: center;
-	background-size: auto 640px;
-	min-height: 640px;
-	width: 100%;
+	background-position: top;
+	background-size: 100% 640px;
+	
 }
 div.wrap_testimonial div.inner_wrap > span {
 	display: block;
 	text-align: center;
 }
 div.wrap_testimonial div.inner_wrap > span:nth-of-type(1) {
-	padding-top: 70px;
+	padding-top: 25px;
 	font-size: 2.1rem;
 }
 div.wrap_testimonial div.inner_wrap > span:nth-of-type(2) {
@@ -265,11 +264,204 @@ div.wrap_testimonial div.inner_wrap > span:nth-of-type(2):after {
 	position: absolute;
 	bottom:-5px;
 	left: 50%;
-	margin-left: -100px;
+	margin-left: -150px;
 	background-color:#bcc2c6;
 	height: 2px;
-	width: 200px;
+	width: 300px;
 }
+
+div.wrap_testimonial div.inner_wrap div.testimonials_container {
+	display: block;
+	margin-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	position: relative;
+}
+div.wrap_testimonial div.inner_wrap div.testimonials_container p:nth-of-type(1) {
+	font-size: 1rem;
+	background-color:  rgba(255, 255, 255, 0.7);
+	
+}
+div.wrap_testimonial div.inner_wrap div.testimonials_container p:nth-of-type(2) {
+	display: block;
+	width: 130px;
+	margin-top: 0px;
+	font-size: 1.4rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+div.wrap_testimonial div.inner_wrap div.testimonials_container nav.controls {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 255px;
+}
+div.wrap_testimonial div.inner_wrap div.testimonials_container nav.controls a {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin-left: 6px;
+	margin-right: 6px;
+	border: 2px solid white;
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: 0px 0px 0px 1px #33485d;
+	transition: 0.3s all;
+}
+div.wrap_testimonial div.inner_wrap div.testimonials_container nav.controls a.active {
+	background-color: black;
+	border-color: white;
+}
+div.wrap_testimonial div.inner_wrap div.testimonials_container .testimonial {
+	position: absolute;
+	top: 0px;
+	left:5px; 
+	padding-right: 20px;
+	padding-left: 20px;
+	opacity: 0;
+	transition: all 0.3s;
+}
+div.wrap_testimonial div.inner_wrap div.testimonials_container .testimonial.visible {
+	opacity: 1;
+}
+div.wrap_testimonial div.inner_wrap div.testimonials_container nav.controls a:nth-of-type(1) {
+	margin-right: 0px;
+}
+div.wrap_testimonial div.inner_wrap div.testimonials_container > a:nth-of-type(1) {
+     position: absolute;
+     bottom:65px;
+     left: 55px;
+     background-image: url(../images/arrow-left.svg);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: 30px;
+     width: 30px;
+     height: 30px;
+     cursor: pointer;
+}
+div.wrap_testimonial div.inner_wrap div.testimonials_container > a:nth-of-type(2) {
+     position: absolute;
+     bottom: 65px;
+     right: 55px;
+     background-image: url(../images/arrow-right.svg);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: 30px;
+     width: 30px;
+     height: 30px;
+     cursor: pointer;
+}
+/*FOOTER FORM*/
+
+footer {
+	background-image: url(../images/mobile-footer.jpg);
+	background-repeat: no-repeat;
+	background-position:center bottom;
+	background-size: 100%;
+	min-height: 640px;
+}
+footer div.inner_wrap > div {
+    display:block;
+}
+
+footer div.inner_wrap > div:nth-of-type(1) { 
+	display: block;
+	text-align: center;
+}
+footer div.inner_wrap > div:nth-of-type(1) > span {
+   display: block;
+   background-color: #33516f;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-left: 40px;
+   padding-right: 40px;
+   font-size: 1.5rem;
+   color:white;
+}
+footer div.inner_wrap > div:nth-of-type(1) form {
+	background-color: white;
+}
+footer div.inner_wrap > div:nth-of-type(1) form label {
+	display: inline-block;
+	padding-top: 20px;
+}
+footer div.inner_wrap > div:nth-of-type(1) form label span {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: right;
+	width: 70px;
+	font-size: 1.2rem;
+}
+footer div.inner_wrap > div:nth-of-type(1) form label input {
+	display: inline-block;
+	vertical-align: middle;
+	width: 210px;
+	height: 40px;
+	font-size: 1.2rem;
+	border: 1px solid #33516f;
+	transition:all 0.3s;
+}
+footer div.inner_wrap > div:nth-of-type(1) form label input:focus {
+	border: 1px solid rgba(237, 143, 24, 1);
+}
+footer div.inner_wrap > div:nth-of-type(1) form div.controls {
+	display: block;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+footer div.inner_wrap > div:nth-of-type(1) form div.controls button {
+	background : linear-gradient(0deg, rgba(230, 126, 34, 1) 0%, rgba(243, 156, 18, 1) 99.51%);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 45px;
+	padding-right: 45px;
+	color: white;
+	font-size: 1.6rem;
+	border: 1px solid rgba(237, 143, 24, 1);
+	box-shadow : 0px 0px 5px rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+}
+
+footer div.inner_wrap > div:nth-of-type(1) form div.controls button:hover {
+	background : linear-gradient(0deg, rgba(243, 156, 18, 1) 0%, rgba(230, 126, 34, 1) 99.51%);
+}
+
+/*FOOTER BOTTOM*/
+
+footer div.inner_wrap > div:nth-of-type(2) {
+	display: block;
+	text-align: center;
+	padding-bottom: 75px;
+}
+footer div.inner_wrap > div:nth-of-type(2) > span:nth-of-type(1) {
+    display: block;
+	padding-top: 10px;
+	font-size: 1.7rem;
+	font-weight: bold;
+} 
+footer div.inner_wrap > div:nth-of-type(2) > span:nth-of-type(2) {
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+footer div.inner_wrap > div:nth-of-type(2) > div.call_to_action {
+	display: block;
+}
+footer div.inner_wrap > div:nth-of-type(2) > div.call_to_action span{
+	display: block;
+	color: white;
+	font-size: 0.9rem;
+	padding-bottom: 10px;
+}
+
+
+
+
+
 
 
 
