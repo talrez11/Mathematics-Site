@@ -376,7 +376,7 @@ div.wrap_testimonial div.inner_wrap div.testimonials_container nav.controls a {
 	margin-left: 6px;
 	margin-right: 6px;
 	border: 2px solid white;
-	border-radius: 10px;
+	border-radius: 50%;
 	background-color: white;
 	box-shadow: 0px 0px 0px 1px #33485d;
 	transition: 0.3s all;
@@ -431,7 +431,6 @@ div.wrap_testimonial div.inner_wrap div.testimonials_container > a:nth-of-type(2
 }
 
 /*FOOTER SECTION*/
-
 footer {
 	background-image: url(../images/footer-background.jpg);
 	background-repeat: no-repeat;
@@ -550,7 +549,51 @@ footer div.inner_wrap > div:nth-of-type(2) form div.controls button:hover {
 }
 
 /*Tablet*/
-@media (max-width: 1200px) {
+@media (max-width:1200px) {
+	body {
+		width: 1200px;
+	}
+
+div.inner_wrap div.header_content a.phone {
+	top:5px;
+	left: 15px;
+	}
+
+	header div.inner_wrap div.header_content {
+		padding-right:40px;
+		background-position: 30px bottom;
+	}
+
+	header div.form_wrap div.inner_wrap form label input {
+		margin-right: 10px;
+		width: 230px;
+	}
+
+	div.wrap_testimonial div.inner_wrap > span:nth-of-type(1) {
+		padding-right: 50px;
+	}
+
+	div.wrap_testimonial div.inner_wrap > span:nth-of-type(2) { 
+       padding-right: 50px;
+	}
+	
+	div.wrap_testimonial div.inner_wrap div.testimonials_container {
+		margin-right: 50px;
+	}
+
+	div.wrap_testimonial div.inner_wrap div.testimonials_container nav.controls a {
+		width: 25px;
+		height: 25px;
+	}
+
+	footer div.inner_wrap > div:nth-of-type(1) { 
+   		width: 450px;
+   		padding-right: 40px;
+	}
+
+	footer div.inner_wrap > div:nth-of-type(2) {
+		margin-right: 150px;
+	}
 	
 }
 
